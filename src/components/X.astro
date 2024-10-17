@@ -1,0 +1,140 @@
+---
+const {theme} = Astro.props;
+---
+
+<style>
+	.tec .right {
+		opacity: 1;
+		fill: #35617a; 
+	}
+	.tec .left {
+		opacity: 0.56;
+		fill: #009bd8;
+	}
+	.bg .right {
+		opacity: 0.2;
+		fill: #35617A;
+	}
+	.bg .left {
+		opacity: 0.2;
+		fill: #009bd8;
+	}
+	.sme .right {
+		opacity: 1;
+		fill: #af7dc9; 
+	}
+	.sme .left {
+		opacity: 0.80;
+		fill: #c9b7e8;
+	}
+	.stu .right {
+		opacity: 1;
+		fill: #35617a; 
+	}
+	.stu .left {
+		opacity: 0.56;
+		fill: #009bd8;
+	}
+
+	.div .right,
+	.div .left {
+		opacity: 1;
+		fill: url(#div);
+	}
+	.inc .right {
+		opacity: 1;
+		fill: #ff6f4a; 
+	}
+	.inc .left {
+		opacity: 0.56;
+		fill: #f6947a;
+	}
+	.fai .right {
+		opacity: 1;
+		fill: #54c5c8; 
+	}
+	.fai .left {
+		opacity: 0.56;
+		fill: #009bd8;
+	}
+	
+	.ass .right {
+		opacity: 1;
+		fill: #ce4a62; 
+	}
+	.ass .left {
+		opacity: 0.56;
+		fill: #dc587c;
+	}
+	.spo .right {
+		opacity: 1;
+		fill: #fb9a2d; 
+	}
+	.spo .left {
+		opacity: 0.56;
+		fill: #fcb85f;
+	}
+	.cor .right {
+		opacity: 1;
+		fill: #119962; 
+	}
+	.cor .left {
+		opacity: 0.56;
+		fill: #c5e8bc;
+	}
+	.lgb #arm-right {
+		opacity: 1;
+		fill: #009ccd; 
+	}
+	.lgb #leg-right {
+		opacity: 1;
+		fill: #ffe700; 
+	}
+	.lgb #arm-left {
+		opacity: 1;
+		fill: #e44d61;
+	}
+	.lgb #leg-left {
+		opacity: 1;
+		fill: #5cce59;
+	}
+	.lgb #mid-top {
+		opacity: 1;
+		fill: #7659b1;
+	}
+</style>
+
+<svg version="1.1" id="TEC-X" class={theme} xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="75" viewBox="0 0 75 75" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<path id="mid" d="m26.6 35.3 10.9 16 10.9-16S43 26.9 37.5 18.6L26.6 35.3z"/>
+		<pattern id="div" patternUnits="userSpaceOnUse" width="100" height="100" viewBox="0 0 100 100">
+			<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 100 100'>
+				<rect fill='#ffff00' width='1200' height='800'/>
+				<defs>
+					<radialGradient id='a' cx='0' cy='100' r='100' gradientUnits='userSpaceOnUse'><stop  offset='0' stop-color='#ff8000'/><stop  offset='1' stop-color='#ff8000' stop-opacity='0'/></radialGradient>
+					<radialGradient id='b' cx='100' cy='100' r='100' gradientUnits='userSpaceOnUse'><stop  offset='0' stop-color='#00ff19'/><stop  offset='1' stop-color='#00ff19' stop-opacity='0'/></radialGradient>
+					<radialGradient id='c' cx='50' cy='0' r='100' gradientUnits='userSpaceOnUse'><stop  offset='0' stop-color='#9900ff'/><stop  offset='1' stop-color='#9900ff' stop-opacity='0'/></radialGradient>
+					<radialGradient id='d' cx='50' cy='100' r='100' gradientUnits='userSpaceOnUse'><stop  offset='0' stop-color='#ffff00'/><stop  offset='1' stop-color='#ffff00' stop-opacity='0'/></radialGradient>
+					<radialGradient id='e' cx='0' cy='0' r='100' gradientUnits='userSpaceOnUse'><stop  offset='0' stop-color='#FF0000'/><stop  offset='1' stop-color='#FF0000' stop-opacity='0'/></radialGradient>
+					<radialGradient id='f' cx='100' cy='0' r='100' gradientUnits='userSpaceOnUse'><stop  offset='0' stop-color='#0CF'/><stop  offset='1' stop-color='#0CF' stop-opacity='0'/></radialGradient>
+				</defs>
+				<rect fill='url(#a)' width='1200' height='800'/>
+				<rect fill='url(#b)' width='1200' height='800'/>
+				<rect fill='url(#c)' width='1200' height='800'/>
+				<rect fill='url(#d)' width='1200' height='800'/>
+				<rect fill='url(#e)' width='1200' height='800'/>
+				<rect fill='url(#f)' width='1200' height='800'/>
+			</svg>
+		</pattern>
+	</defs>
+	<g id="right">
+		<use id="mid-top" class="right" opacity="1" fill="#35617a" xlink:href="#mid"/>
+		<path id="arm-right" class="right"  opacity="1" fill="#35617a" d="m47.5 3.4-10 15.2c5.4 8.3 10.9 16.7 10.9 16.7l21-31.9H47.5z"/>
+		<path id="leg-right" class="right" opacity="1" fill="#35617a" d="m48.4 35.3-10.9 16 13.9 20.5h21.4z"/>
+	</g>
+	<g id="left" >
+		<use id="mid-top" class="left" opacity="0.56" fill="#009bd8" xlink:href="#mid"/>
+		<path id="arm-left" class="left"  opacity="0.56" fill="#009bd8" d="M27.6 3.3H5.7l20.9 32 10.9-16.7C32.6 11 27.6 3.3 27.6 3.3z"/>
+		<path id="leg-left" class="left" opacity="0.56" fill="#009bd8"  d="M26.6 35.3 2.2 71.7h21.4l13.9-20.4z"/>
+	</g>
+</svg>
