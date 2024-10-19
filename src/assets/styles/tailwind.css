@@ -18,6 +18,131 @@
   .text-muted {
     color: var(--aw-color-text-muted);
   }
+  .x-ko {
+    .right {
+      @apply fill-gray-950 dark:fill-white opacity-100;
+    }
+    #mid-top {
+      @apply fill-gray-950 dark:fill-white opacity-100;
+    }
+    .left {
+      @apply fill-gray-950 dark:fill-white opacity-50;
+    }
+  }
+  .x-tec .right {
+    opacity: 1;
+    fill: #35617a;
+  }
+  .x-tec .left {
+    opacity: 0.56;
+    fill: #009bd8;
+  }
+
+  .x-bg .right {
+    opacity: 0.2;
+    fill: #35617a;
+  }
+  .x-bg .left {
+    opacity: 0.2;
+    fill: #009bd8;
+  }
+  .x-sme .right {
+    opacity: 1;
+    fill: #af7dc9;
+  }
+  .x-sme .left {
+    opacity: 0.8;
+    fill: #c9b7e8;
+  }
+  .x-stu {
+    .right {
+      opacity: 1;
+      fill: #35617a;
+    }
+    .left {
+      opacity: 0.56;
+      fill: #009bd8;
+    }
+  }
+  .x-div {
+    .right,
+    .left {
+      opacity: 1;
+      fill: url(#div);
+    }
+  }
+  .x-inc {
+    .right {
+      opacity: 1;
+      fill: #ff6f4a;
+    }
+    .left {
+      opacity: 0.56;
+      fill: #f6947a;
+    }
+  }
+  .x-fai {
+    .right {
+      opacity: 1;
+      fill: #54c5c8;
+    }
+    .left {
+      opacity: 0.56;
+      fill: #009bd8;
+    }
+  }
+  .x-ass {
+    .right {
+      opacity: 1;
+      fill: #ce4a62;
+    }
+    .left {
+      opacity: 0.56;
+      fill: #dc587c;
+    }
+  }
+  .x-spo {
+    .right {
+      opacity: 1;
+      fill: #fb9a2d;
+    }
+    .left {
+      opacity: 0.56;
+      fill: #fcb85f;
+    }
+  }
+  .x-cor {
+    .right {
+      opacity: 1;
+      fill: #119962;
+    }
+    .left {
+      opacity: 0.56;
+      fill: #c5e8bc;
+    }
+  }
+  .x-lgb {
+    #arm-right {
+      opacity: 1;
+      fill: #009ccd;
+    }
+    #leg-right {
+      opacity: 1;
+      fill: #ffe700;
+    }
+    #arm-left {
+      opacity: 1;
+      fill: #e44d61;
+    }
+    #leg-left {
+      opacity: 1;
+      fill: #5cce59;
+    }
+    #mid-top {
+      opacity: 1;
+      fill: #7659b1;
+    }
+  }
 }
 
 @layer components {
