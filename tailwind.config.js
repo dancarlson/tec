@@ -12,14 +12,6 @@ export default {
         accent: 'var(--aw-color-accent)',
         default: 'var(--aw-color-text-default)',
         muted: 'var(--aw-color-text-muted)',
-        'x-ko-right': {
-          DEFAULT: 'var(--x-ko-right)',
-          dark: 'var(--x-ko-right-dark)',
-        },
-        'x-ko-left': {
-          DEFAULT: 'var(--x-ko-left)',
-          dark: 'var(--x-ko-left-dark)',
-        },
       },
       fontFamily: {
         sans: ['var(--aw-font-sans, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
