@@ -30,7 +30,7 @@ export interface Props {
   showToggleTheme?: boolean;
   showRssFeed?: boolean;
   position?: string;
-  metadata?: object;
+  metadata?: { conClass?: string };
 }
 
 const {
@@ -43,18 +43,16 @@ const {
   showRssFeed = false,
   position = 'center',
   metadata = {},
+  isDark = true,
 } = Astro.props;
-
 const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
-const logoTheme = metadata.conClass || 'x-ko';
-console.log('Full Header metadata:', metadata);
-console.log('logoTheme:', logoTheme);
+const logoTheme = metadata.conClass ?? 'x-ko';
 ---
 
 <header
   class:list={[
-    { sticky: isSticky, relative: !isSticky, dark: true },
-    'top-0 z-40 flex-none mx-auto w-full border-b border-gray-50/0 transition-[opacity] ease-in-out',
+    { sticky: isSticky, relative: !isSticky, dark: isDark },
+    'bg-dark top-0 z-40 flex-none mx-auto w-full border-b border-gray-50/0 transition-[opacity] ease-in-out',
   ]}
   {...isSticky ? { 'data-aw-sticky-header': true } : {}}
   {...id ? { id } : {}}>
