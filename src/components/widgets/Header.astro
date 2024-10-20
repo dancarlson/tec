@@ -30,6 +30,7 @@ export interface Props {
   showToggleTheme?: boolean;
   showRssFeed?: boolean;
   position?: string;
+  metadata?: object;
 }
 
 const {
@@ -37,14 +38,17 @@ const {
   links = [],
   actions = [],
   isSticky = false,
-  isDark = false,
   isFullWidth = false,
   showToggleTheme = true,
   showRssFeed = false,
   position = 'center',
+  metadata = {},
 } = Astro.props;
 
 const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
+const logoTheme = metadata.conClass || 'x-ko';
+console.log('Full Header metadata:', metadata);
+console.log('logoTheme:', logoTheme);
 ---
 
 <header
@@ -70,7 +74,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
     ]}>
     <div class:list={[{ 'mr-auto rtl:mr-0 rtl:ml-auto': position === 'right' }, 'flex justify-between']}>
       <a class="flex items-center" href={getHomePermalink()}>
-        <Logo theme="x-ko" />
+        <Logo theme={logoTheme} />
       </a>
       <div class="flex items-center md:hidden">
         <ToggleMenu />

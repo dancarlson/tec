@@ -23,6 +23,9 @@ export interface Props {
 
 const { metadata = {} } = Astro.props;
 const { language, textDirection } = I18N;
+
+// Create a dynamic class string for the body
+const conClass = `antialiased text-default bg-page tracking-tight ${metadata.section ? ` ${metadata.section}` : ''}`;
 ---
 
 <!doctype html>
@@ -40,7 +43,7 @@ const { language, textDirection } = I18N;
     <ViewTransitions fallback="swap" />
   </head>
 
-  <body class="antialiased text-default bg-page tracking-tight">
+  <body class={conClass}>
     <slot />
 
     <BasicScripts />
