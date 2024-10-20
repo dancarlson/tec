@@ -10,13 +10,13 @@ site:
 metadata:
   title:
     default: 'The Express Conferences'
-    template: '%s — AstroWind'
+    template: '%s — The Express Conferences'
   description: "\U0001F680 America's most unique trade show!"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: 'The Express Conferences'
     images:
       - url: '~/assets/images/default.png'
         width: 1200

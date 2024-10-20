@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: 'thiely';
+    src: url('~/assets/fonts/thiely.woff') format('woff');
+    font-weight: extra-thin;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
 @layer utilities {
   .bg-page {
     background-color: var(--aw-color-bg-page);
